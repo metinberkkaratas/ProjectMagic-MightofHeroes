@@ -1,7 +1,7 @@
 # ProjectMagic-MightofHeroes
 
 ## Requriments
-Python 3.6.8(recomended)
+Python 3.6.8(recomended)  
 virtualenv
 
 ## To prepere environment
