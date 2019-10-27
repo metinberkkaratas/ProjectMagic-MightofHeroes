@@ -1,12 +1,12 @@
 # ProjectMagic-MightofHeroes
 
 ## Requriments
-Python 3.6.8(recomended)  
+Python 3.6.8(recomended)
 virtualenv
 
 ## To prepere environment
 <code>
-virtualenv -p /usr/bin/python3 venv
+virtualenv -p /usr/bin/python3 venv  
 pip install -r PMMH/requirements.txt
 </code>
 
@@ -23,4 +23,9 @@ source PMMH/venv/bin/activate
 ## To run project
 <code>
 python PMMH/manage.py runserver
+</code>
+
+## To add admin user
+<code>
+python3 manage.py createsuperuser
 </code>
