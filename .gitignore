@@ -105,3 +105,17 @@ venv.bak/
 
 # Pycharm
 .idea
+
+
+# mypy
+.mypy_cache/
+
+.DS_Store
+*.sqlite3
+*.pyc
+*.db
+*.pid
+# django migrations 
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
