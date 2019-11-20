@@ -1,0 +1,291 @@
+body {
+    background-image: url(../../../media/example-light.png);
+    width: auto;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 1768px 1000px;
+    background-position:center;
+}
+
+#closexDiv{
+    text-align: right;
+    width: 5%;
+    height: 8%;
+    margin-left: 100%;
+}
+
+.img-container {
+    text-align: center;
+    display:block;
+    height: 91%;
+    width: 95%;
+    margin: auto;
+    padding-top:20px ;
+}
+
+#mainDiv{
+    float: none;
+    margin: auto;
+    background-position: center;
+    width: 85%;
+    height: 90%;
+}
+
+#generalViewDiv{
+    float: none;
+    margin: auto;
+    width: 100%;
+    height: 95%;
+}
+
+#leftDiv{
+    float: left;
+    margin: auto;
+    width: 35%;
+    height: 100%;
+}
+
+#middleDiv{
+    float: left;
+    margin: auto;
+    width: 25%;
+    height: 100%;
+}
+
+#rightDiv{
+    float: left;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+}
+
+#heroHeaderDiv{
+    background-image: url(../../../media/Header.png);
+    background-size:540px 110px;
+    float: none;
+    margin: auto;
+    width: 95%;
+    height: 12%;
+}
+
+.heroNameText{
+    line-height: 110px;
+    margin: auto;
+    color:firebrick;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.skillTreeText{ /* also for inventoryText */
+    line-height: 100px;
+    margin: auto;
+    color:saddlebrown;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.equipmentText{ /* also for skillsText */
+    line-height: 50px;
+    margin: auto;
+    color:saddlebrown;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#heroAvatarDiv{
+    background-image: url(../../../media/example-dark.png);
+    background-size:338px 390px;
+    float: none;
+    margin: auto;
+    width: 60%;
+    height: 45%;
+}
+
+#heroStatsDiv{
+    background-image: url(../../../media/example-dark.png);
+    background-size:535px 285px;
+    float: none;
+    margin: auto;
+    width: 95%;
+    height: 33%;
+}
+
+#expBarDiv{
+    background-image: url(../../../media/expbar.png);
+    background-size:480px 90px;
+    float: none;
+    margin: auto;
+    width: 85%;
+    height: 10%;
+}
+
+#skillTextDiv{
+    float: none;
+    margin: auto;
+    width: 95%;
+    height: 10%;
+}
+
+#skillTreeDiv{
+    background-image: url(../../../media/skill-tree.png);
+    background-size:390px 770px;
+    float: none;
+    margin: auto;
+    width: 95%;
+    height: 90%;
+}
+
+#upperDiv{
+    float: none;
+    margin: auto;
+    width: 95%;
+    height: 45%;
+}
+
+#inverntoryTextDiv{
+    float: none;
+    margin: auto;
+    width: 95%;
+    height: 20%;
+}
+
+#inventoryDiv{
+    background-image: url(../../../media/example-dark.png);
+    background-size:580px 235px;
+    float: none;
+    margin: auto;
+    margin-top: 2%;
+    width: 95%;
+    height: 60%;
+}
+
+#lowerDiv{
+    float: none;
+    margin: auto;
+    width: 95%;
+    height: 55%;
+}
+
+#leftLowerDiv{
+    float: left;
+    margin: auto;
+    width: 50%;
+    height: 95%;
+}
+
+#equipmentTextDiv{
+    float: none;
+    margin: auto;
+    width: 90%;
+    height: 10%;
+}
+
+#equipmentDiv{
+    background-image: url(../../../media/example-dark.png);
+    background-size:275px 405px;
+    float: none;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+#rightLowerDiv{
+    float: left;
+    margin: auto;
+    width: 50%;
+    height: 95%;
+}
+
+#skillsTextDiv{
+    float: none;
+    margin: auto;
+    width: 90%;
+    height: 10%;
+}
+
+#skillsDiv{
+    background-image: url(../../../media/example-dark.png);
+    background-size:275px 405px;
+    float: none;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+#skill1{
+    top: 20%;
+}
+
+#skill2{
+    top: 45%;
+}
+
+#skill3{
+    top: 70%;
+}
+
+.skillCheckBox{ 
+    background-image: url(../../../media/checkbox.png);
+    background-size:cover;
+    float: none;
+    width: 30%;
+    height: 20%;
+    margin-left: 35%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    filter: invert(100%);
+}
+
+.equipmentCheckBox{
+    background-image: url(../../../media/checkbox.png);
+    background-size:cover;
+    float: none;
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    margin-left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    filter: invert(100%);
+}
+#equipmentBox1{
+   top: 20%;
+}
+
+#equipmentBox2{
+    top: 45%;
+}
+
+#equipmentBox3{
+    top: 70%;
+}
+
+#upperInventory{
+    float: none;
+    width: 95%;
+    height: 45%;
+    margin: auto;
+}
+#lowerInventory{
+    float: none;
+    width: 95%;
+    height: 45%;
+    margin: auto;
+}
+
+.inventoryBox{
+    background-image: url(../../../media/checkbox.png);
+    background-size:cover;
+    filter: invert(100%);
+    float: left;
+    width: 15%;
+    height: 80%;
+    margin-top:4%;
+    margin-left:1%;
+}
