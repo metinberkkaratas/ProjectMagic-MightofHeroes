@@ -1,0 +1,160 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/host_game/host_game.css">
+    </link>
+    <title>Magic&Might of Heroes</title>
+</head>
+<style>
+</style>
+
+<body>
+    <div id="mainDiv">
+        <div id="PlayerListDiv">
+
+
+            <div class="Player topPlayer">
+                <div class="color">
+
+
+                </div>
+                <div class="PlayerName">
+
+                </div>
+                <div class="Nation">
+                    <select>
+                        <option value="Nation1">Nation1</option>
+                        <option value="Nation2">Nation2</option>
+                        <option value="Nation3">Nation3</option>
+                    </select>
+                </div>
+                <div class="CheckBox">
+                    <form action="/action_page.php">
+
+                        <input type="checkbox" name="Ready" value="Ready" class="checkboxSize"> <br>
+
+                    </form>
+                </div>
+            </div>
+            <div class="Player">
+                <div class="color" id="color2">
+
+
+                </div>
+                <div class="PlayerName">
+
+                </div>
+                <div class="Nation">
+                    <select>
+                        <option value="Nation1">Nation1</option>
+                        <option value="Nation2">Nation2</option>
+                        <option value="Nation3">Nation3</option>
+                    </select>
+                </div>
+                <div class="CheckBox">
+                    <form action="/action_page.php">
+
+                        <input type="checkbox" name="Ready" value="Ready" class="checkboxSize"> <br>
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="Player">
+                <div class="color" id="color3">
+
+
+                </div>
+                <div class="PlayerName">
+
+                </div>
+                <div class="Nation">
+                    <select>
+                        <option value="Nation1">Nation1</option>
+                        <option value="Nation2">Nation2</option>
+                        <option value="Nation3">Nation3</option>
+                    </select>
+                </div>
+                <div class="CheckBox">
+                    <form action="/action_page.php">
+
+                        <input type="checkbox" name="Ready" value="Ready" class="checkboxSize"> <br>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="chatDiv">
+                <div id="showText">
+                  <textarea readonly rows="16" cols="164"></textarea>
+                </div>
+                <div id="chatText">
+                  <textarea sentences maxlength="100" placeholder="Enter to send your message!" rows="2" cols="164"></textarea>
+                </div>
+        </div>
+
+        
+
+
+
+    </div>
+    <div id="sideDiv">
+        <div id="MapBackgroundDiv">
+            <img src="../media/map-img.png" alt="" style="margin: auto;width: 400px;height: 300px;">
+            <div id="MapSelection">
+                <h3>
+                    MAP
+                </h3>
+
+
+            </div>
+            <div class="row">
+                <select>
+                    <option value="The Moving Forest">The Moving Forest</option>
+
+                </select>
+            </div>
+            <div id="VictoryCondition">
+                <h3>
+                    VICTORY CONDITION
+                </h3>
+            </div>
+            <div class="row2">
+
+                <select>
+                    <option value="The Moving Forest">The Moving Forest</option>
+
+                </select>
+
+
+                <div id="NumberOfTurns">
+                    <h3>
+                        NumberOfTurns
+                    </h3>
+                </div>
+                <div class="row3">
+
+                    <select>
+                        <option value="TurnNumber">50</option>
+
+                    </select>
+                </div>
+                <div id="row">
+                    <div id="StartButton">
+                    </div>
+                    <div id="startText">
+                        <h2>START</h2>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+
+
+
+
+</body>
+
+</html>
