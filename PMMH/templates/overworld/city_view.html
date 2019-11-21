@@ -5,6 +5,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../../static/overworld/city_view/city_view.css">
   </link>
+  <script src="../../static/overworld/city_view/city_view.js" ></script>
 </head>
 <body>
   <div class="mainDiv">
@@ -39,10 +40,10 @@
           <div id="buildingInfoDiv">
             <div class="row">
               <div class="buildingUpgradeDiv">
-                <img src="../../media/found-religion.png" alt="" width="90%" class="img-container">
+                <img src="../../media/found-religion.png" alt="" width="90%" class="img-container" onclick="foundReligion()" >
               </div>
               <div class="buildingUpgradeDiv">
-                <img src="../../media/add-blief.png" alt="" width="90%" class="img-container">
+                <img src="../../media/add-blief.png" alt="" width="90%" class="img-container" onclick="foundReligion()" >
               </div>
             </div>
             <div class="row">
@@ -110,7 +111,7 @@
       </div>
       <div id="actionDiv">
         <div id="backButtonDiv">
-          <img src="../../media/back-button.png" alt="" width="90%">
+          <img src="../../media/back-button.png" onclick="locationBack();" alt="" width="90%">
         </div>
         <div id="turnButtonDiv">
           <img src="../../media/turn-button.png" alt="" width="90%">

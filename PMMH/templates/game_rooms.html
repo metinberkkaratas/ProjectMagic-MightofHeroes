@@ -1,6 +1,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../static/game_rooms/game_rooms.css">
     </link>
+    <script src="../static/game_rooms/game_rooms.js"></script>
     <title>Magic&Might of Heroes</title>
 </head>
 <style>
@@ -15,11 +16,11 @@
                 <div id="roomsDiv">
                     <div class="spesificRoom">
                         <div id="roomNameDiv"><h3 class="spesificRoomsText">Metin's Game</h3></div>
-                        <div id="joinButtonDiv"><button class="joinGameButton" type="button">Join</button></div>
+                        <div id="joinButtonDiv"><button class="joinGameButton" onclick="hostGame();" type="button">Join</button></div>
                     </div>
                     <div class="spesificRoom">
                         <div id="roomNameDiv"><h3 class="spesificRoomsText">Uğur's Game</h3></div>
-                        <div id="joinButtonDiv"><button class="joinGameButton" type="button">Join</button></div>
+                        <div id="joinButtonDiv"><button class="joinGameButton" onclick="hostGame();" type="button">Join</button></div>
                     </div>
                 </div>
                 <div id="rightCross"></div>
@@ -29,7 +30,7 @@
             <div id="settingsHeader"></div>
             <div id="settingDiv">
                 <div class="row">
-                    <div class="hostGameDiv"><button class="hostGameButton" type="button">Host Game</button></div>
+                    <div class="hostGameDiv"><button class="hostGameButton" onclick="hostGame();" type="button">Host Game</button></div>
                 </div>
                 <div class="row">
                     <div class="hostGameDiv"><button class="hostGameButton" type="button">Load Game</button></div>
