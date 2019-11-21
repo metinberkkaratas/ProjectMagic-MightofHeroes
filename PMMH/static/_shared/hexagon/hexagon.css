@@ -1,14 +1,16 @@
 #grid {
-    width: 42%;
-    height: 100vh;
-    transform: rotate(90deg);
+    width: 55%;
+    position: absolute;
+    bottom: 95%;
+    -webkit-transform: rotateZ(90deg);
+    transform-origin: 0 100%;
+    white-space: nowrap;
 }
 .clear:after {
     clear: both;
 }
 #grid li {
     list-style-type: none;
-    position: relative;
     float: left;
     width: 3.482142857%;
     padding: 0 0 4.020950181% 0;
