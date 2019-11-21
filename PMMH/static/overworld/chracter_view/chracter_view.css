@@ -23,6 +23,15 @@ body {
     padding-top:20px ;
 }
 
+.item-container {
+    text-align: center;
+    display:block;
+    margin:auto;
+    height: 85%;
+    width: 80%;
+    margin-top:5px;
+  }
+
 #mainDiv{
     float: none;
     margin: auto;
@@ -61,7 +70,7 @@ body {
 
 #heroHeaderDiv{
     background-image: url(../../../media/Header.png);
-    background-size:540px 110px;
+    background-size:525px 100px;
     float: none;
     margin: auto;
     width: 95%;
@@ -80,7 +89,7 @@ body {
 .skillTreeText{ /* also for inventoryText */
     line-height: 100px;
     margin: auto;
-    color:saddlebrown;
+    color:blue;
     font-size: xx-large;
     font-weight: bolder;
     text-align: left;
@@ -89,7 +98,7 @@ body {
 .equipmentText{ /* also for skillsText */
     line-height: 50px;
     margin: auto;
-    color:saddlebrown;
+    color:indianred;
     font-size: xx-large;
     font-weight: bolder;
     text-align: left;
@@ -97,7 +106,7 @@ body {
 
 #heroAvatarDiv{
     background-image: url(../../../media/example-dark.png);
-    background-size:338px 390px;
+    background-size:330px 390px;
     float: none;
     margin: auto;
     width: 60%;
@@ -106,11 +115,21 @@ body {
 
 #heroStatsDiv{
     background-image: url(../../../media/example-dark.png);
-    background-size:535px 285px;
+    background-size:526px 285px;
     float: none;
     margin: auto;
     width: 95%;
     height: 33%;
+}
+
+.heroStatsText{
+    float: left;
+    margin: auto;
+    font-size: large;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 45%;
+    height: 90%;
 }
 
 #expBarDiv{
@@ -154,7 +173,7 @@ body {
 
 #inventoryDiv{
     background-image: url(../../../media/example-dark.png);
-    background-size:580px 235px;
+    background-size:570px 235px;
     float: none;
     margin: auto;
     margin-top: 2%;
@@ -185,7 +204,7 @@ body {
 
 #equipmentDiv{
     background-image: url(../../../media/example-dark.png);
-    background-size:275px 405px;
+    background-size:270px 405px;
     float: none;
     margin: auto;
     width: 90%;
@@ -209,7 +228,7 @@ body {
 
 #skillsDiv{
     background-image: url(../../../media/example-dark.png);
-    background-size:275px 405px;
+    background-size:270px 405px;
     float: none;
     margin: auto;
     width: 90%;
@@ -239,7 +258,6 @@ body {
     position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    filter: invert(100%);
 }
 
 .equipmentCheckBox{
@@ -252,7 +270,6 @@ body {
     margin-left: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    filter: invert(100%);
 }
 #equipmentBox1{
    top: 20%;
@@ -282,10 +299,36 @@ body {
 .inventoryBox{
     background-image: url(../../../media/checkbox.png);
     background-size:cover;
-    filter: invert(100%);
     float: left;
     width: 15%;
     height: 80%;
     margin-top:4%;
     margin-left:1%;
+}
+
+.row{
+    float: left;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 3%;
+    height: 25%;
+    width:90%;
+  }
+
+  .equipmentText{
+    float: left;
+    margin: auto;
+    height: 25%;
+  }
+
+.c-w {
+    color: white;
+}
+.c-g {
+    color: green;
+}
+
+.statColumn {
+    width: 50%;
+    margin-bottom: 5px;
 }
