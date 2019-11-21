@@ -230,3 +230,6 @@ body {
     width: 55%;
     float: left;
 }
+.fog {
+    opacity: 0.6;
+}
