@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Magic&Might of Heroes</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/melee_battle/melee_battle.css"></link>
+    <link rel="stylesheet" type="text/css" href="../../static/_shared/hexagon/hexagon.css"></link>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div id="gameDiv">
+            <div id="map">
+            </div>
+        </div>
+        <div id="sideDiv">
+            <div id="heroHeader">
+                <span>Argeon Highmayne</span>
+            </div>
+            <div id="actionDiv">
+                <div class="row" id="generalStatus" >
+                    <div class="column" id="heroAvatar" >
+                        <img src="../media/hero-avatar.png" width="92%" height="115px" />
+                    </div>
+                    <div class="column" id="heroStatus">
+                        <div class="row bar" id="hpRow">
+                            <span class="column" >HP</span>
+                            <div class="column barWindow" id="healthBar">
+                                <div class="filler" id="healthFiller" ></div>
+                            </div>
+                        </div>
+                        <div class="row bar" id="spRow" >
+                            <span class="column" >SP</span>
+                            <div class="column barWindow" id="speacialBar">
+                                <div class="filler" id="speacialFiller" ></div>
+                            </div>
+                        </div>
+                        <div class="row" id="items" >
+                            <div class="column item">
+                                <img src="../media/fight/item_1.png" width="60%" />
+                            </div>
+                            <div class="column item">
+                                <img src="../media/fight/item_2.png" />
+                            </div>
+                            <div class="column item" id="lastItem">
+                                <img src="../media/fight/item_3.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="stat" >
+                    <div class="column statColumn" >
+                        <span class="c-g">strenght : </span><span class="c-w" >19</span>
+                        <br>
+                        <br>
+                        <span class="c-g">agility : </span><span class="c-w" >7</span>
+                        <br>
+                        <br>
+                        <span class="c-g">stamina : </span><span class="c-w" >12</span>
+                        <br>
+                        <br>
+                        <span class="c-g">intellient : </span><span class="c-w" >5</span>
+                    </div>
+                    <div class="column statColumn" >
+                        <span class="c-g">armor : </span><span class="c-w">56</span>
+                        <br>
+                        <br>
+                        <span class="c-g">damage : </span><span class="c-w">20</span>
+                        <br>
+                        <br>
+                        <span class="c-g">vitality : </span><span class="c-w">16</span>
+                    </div>
+                </div>
+                <div class="row" id="skills">
+                    <div class="column skill">
+                        <img src="../media/fight/skill_1.png" width="60%" height="60%" />
+                    </div>
+                    <div class="column skill">
+                        <img src="../media/fight/skill_2.png" width="60%" height="60%" />
+                    </div>
+                    <div class="column skill">
+                        <img src="../media/fight/skill_3.png" width="60%" height="60%" />
+                    </div>
+                </div>
+                <div class="row buttons" >
+                    <button id="attackButton" >
+                        <img src="../media/naval/skull.png" />
+                        <span>Attack</span>
+                    </button>
+                    <button id="turnButton" >
+                        <img src="../media/sandglass.png" />
+                        <span>Turn</span>
+                    </button>
+                </div>
+            </div>
+            <div id="chatDiv">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
