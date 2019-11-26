@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+
+class SeaFight(models):
+    battle_field = models.OneToOneField(Battlefield, on_delete=models.CASCADE)
