@@ -37,15 +37,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_extensions',
+
     'apps.user',
-    'apps.game_session',
+    'apps.settings',
+    'apps.game',
+    'apps.game.battlefield',
+    'apps.game.battlefield.battle_report',
+    'apps.game.chat',
     'apps.game.city',
     'apps.game.city.building',
     'apps.game.city.god',
-    'apps.game',
-    'apps.settings',
+    'apps.game.event',
     'apps.game.location',
-
+    'apps.game.map',
+    'apps.game.map.hexagon',
+    'apps.game.nation',
+    'apps.game.resources',
+    'apps.game.unit',
+    'apps.game.unit.hero',
+    'apps.game.unit.hero.item',
+    'apps.game.unit.hero.skill',
+    'apps.game.unit.ship',
+    'apps.game.unit.unit_stat',
 ]
 
 MIDDLEWARE = [
