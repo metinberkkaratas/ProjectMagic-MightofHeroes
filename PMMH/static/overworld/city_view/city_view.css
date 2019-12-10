@@ -1,5 +1,5 @@
 body {
-   background-image: url(../../../media/general-background.png);
+   background-image: url(../../media/general-background.png);
    background-repeat: no-repeat;
    background-size: cover;
   }
@@ -9,7 +9,7 @@ body {
   height: 925px;
   width: 70%;
   background-position: center;
-  background-image: url(../../../media/example-light.png);
+  background-image: url(../../media/example-light.png);
   background-repeat: no-repeat;
   background-size: 1350px 950px;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 #resourceDiv{
-  background-image: url(../../../media/example-light.png);
+  background-image: url(../../media/example-light.png);
   margin: auto;
   width: 90%;
   height: 300px;
@@ -42,7 +42,7 @@ body {
 }
 
 #chatDiv{
-  background-image: url(../../../media/example-dark.png);
+  background-image: url(../../media/example-dark.png);
   background-size: 100% 100%;
   margin: auto;
   width: 95%;
@@ -70,7 +70,7 @@ body {
  float: left;
  margin-right: 20px;
  margin-left: 10px;
- background-image: url(../../../media/example-dark.png);
+ background-image: url(../../media/example-dark.png);
  background-size: 240px 190px;
  width: 22%;
  height: 100%;
@@ -93,7 +93,7 @@ body {
  float: left;
  margin-right: 20px;
  margin-left: 10px;
- background-image: url(../../../media/SliderBar.png);
+ background-image: url(../../media/SliderBar.png);
  background-size: 250px 70px;
  width: 22%;
  height: 100%;
@@ -110,7 +110,7 @@ body {
 }
 
 #buildingDiv{
-  background-image: url(../../../media/example-dark.png);
+  background-image: url(../../media/example-dark.png);
   background-size: 255px 230px;
   height: 70%;
   width: 95%;
@@ -136,7 +136,7 @@ body {
  margin-right: 20px;
  margin-left: 15px;
  margin-top: 10px;
- background-image: url(../../../media/SliderBar.png);
+ background-image: url(../../media/SliderBar.png);
  background-size: 260px 60px;
  width: 90%;
  height: 15%;
@@ -147,7 +147,7 @@ body {
 
 #buildingInfoDiv{
   float: left;
-  background-image: url(../../../media/example-dark.png);
+  background-image: url(../../media/example-dark.png);
   background-size: 810px 450px;
   height: 80%;
   width: 72%;

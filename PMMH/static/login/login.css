@@ -1,5 +1,5 @@
 body {
-    background-image: url(../../media/example-light.png);
+    background-image: url(../media/example-light.png);
     background-repeat:no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -18,7 +18,7 @@ body {
     margin-top:1%;
     text-align:center;
     width: 50%;
-    background-image: url(../../media/Logo.png);
+    background-image: url(../media/Logo.png);
     background-position: center;
     height: 250px;
     background-size: 100% 100%;
@@ -29,7 +29,7 @@ body {
     margin-top:1%;
     text-align:center;
     width: 600;
-    background-image: url(../../media/play_button.png);
+    background-image: url(../media/play_button.png);
     background-position: center;
     height: 250px;
 }
@@ -38,7 +38,7 @@ body {
     margin-top:1%;
     text-align:center;
     width: 250;
-    background-image: url(../../media/example-dark.png);
+    background-image: url(../media/example-dark.png);
     background-position: center;
     background-size: 100% 100%;
     height: 55px;
@@ -58,5 +58,5 @@ body {
     background-size: 97% 95%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../../media/general-background.png);
+    background-image: url(../media/general-background.png);
 }

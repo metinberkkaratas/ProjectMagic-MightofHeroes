@@ -1,5 +1,5 @@
 body {
-    background-image: url(../../../media/example-light.png);
+    background-image: url(../../media/example-light.png);
     width: auto;
     height: 1000px;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@ body {
     height: 65%;
 }
 #godImgDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:340px 400px;
     width: 90%;
     height: 50%;
@@ -93,7 +93,7 @@ body {
     float: none;
 }
 #godNameHeaderDiv{
-    background-image: url(../../../media/Header.png);
+    background-image: url(../../media/Header.png);
     background-size:340px 90px;
     width: 90%;
     height: 10%;
@@ -107,7 +107,7 @@ body {
 }
 
 #godInfoDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:340px 300px;
     width: 90%;
     height: 37%;
@@ -117,7 +117,7 @@ body {
 }
 
 .godImgDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:215px 270px;
     float: left;
     width: 19%;
@@ -141,7 +141,7 @@ body {
 }
 
 .godAvatarDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:215px 210px;
     float: none;
     width: 95%;
@@ -150,7 +150,7 @@ body {
 }
 
 .godAvatarNameDiv{
-    background-image: url(../../../media/Header.png);
+    background-image: url(../../media/Header.png);
     background-size:215px 55px;
     float: none;
     width: 95%;
@@ -180,7 +180,7 @@ body {
     padding-left:15px ;
 }
 .left-godpowerDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:545px 115px;
     float: none;
     width: 80%;
@@ -194,7 +194,7 @@ body {
 }
 
 .right-godpowerDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:545px 115px;
     margin: auto;
     float: none;

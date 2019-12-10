@@ -37,9 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'django_extensions',
-
+    'channels',
     'apps.user',
     'apps.settings',
     'apps.game',
@@ -138,13 +137,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+ASGI_APPLICATION = "PMMH.routing.application"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static/'),
+)
 
 # Media Files
 MEDIA_URL = '/media/'

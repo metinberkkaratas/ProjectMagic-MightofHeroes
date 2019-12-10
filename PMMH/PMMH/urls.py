@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from apps.user.urls import urlpatterns as user_url
+from apps.settings.urls import urlpatterns as settings_url
+from apps.game.urls import urlpatterns as game_url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include(user_url)),
+    path('game_rooms/', include(settings_url)),
+    path('game/', include(game_url))
 ]

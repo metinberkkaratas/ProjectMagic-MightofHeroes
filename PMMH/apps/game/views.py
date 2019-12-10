@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def overworld(request):
+    pass
+
+
+def waiting(request):
+    pass
