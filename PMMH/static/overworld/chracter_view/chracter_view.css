@@ -1,5 +1,5 @@
 body {
-    background-image: url(../../../media/example-light.png);
+    background-image: url(../../media/example-light.png);
     width: auto;
     height: 1000px;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@ body {
 }
 
 #heroHeaderDiv{
-    background-image: url(../../../media/Header.png);
+    background-image: url(../../media/Header.png);
     background-size:525px 100px;
     float: none;
     margin: auto;
@@ -105,7 +105,7 @@ body {
 }
 
 #heroAvatarDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:330px 390px;
     float: none;
     margin: auto;
@@ -114,7 +114,7 @@ body {
 }
 
 #heroStatsDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:526px 285px;
     float: none;
     margin: auto;
@@ -133,7 +133,7 @@ body {
 }
 
 #expBarDiv{
-    background-image: url(../../../media/expbar.png);
+    background-image: url(../../media/expbar.png);
     background-size:480px 90px;
     float: none;
     margin: auto;
@@ -149,7 +149,7 @@ body {
 }
 
 #skillTreeDiv{
-    background-image: url(../../../media/skill-tree.png);
+    background-image: url(../../media/skill-tree.png);
     background-size:390px 770px;
     float: none;
     margin: auto;
@@ -172,7 +172,7 @@ body {
 }
 
 #inventoryDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:570px 235px;
     float: none;
     margin: auto;
@@ -203,7 +203,7 @@ body {
 }
 
 #equipmentDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:270px 405px;
     float: none;
     margin: auto;
@@ -227,7 +227,7 @@ body {
 }
 
 #skillsDiv{
-    background-image: url(../../../media/example-dark.png);
+    background-image: url(../../media/example-dark.png);
     background-size:270px 405px;
     float: none;
     margin: auto;
@@ -249,7 +249,7 @@ body {
 }
 
 .skillCheckBox{ 
-    background-image: url(../../../media/checkbox.png);
+    background-image: url(../../media/checkbox.png);
     background-size:cover;
     float: none;
     width: 30%;
@@ -261,7 +261,7 @@ body {
 }
 
 .equipmentCheckBox{
-    background-image: url(../../../media/checkbox.png);
+    background-image: url(../../media/checkbox.png);
     background-size:cover;
     float: none;
     width: 30%;
@@ -297,7 +297,7 @@ body {
 }
 
 .inventoryBox{
-    background-image: url(../../../media/checkbox.png);
+    background-image: url(../../media/checkbox.png);
     background-size:cover;
     float: left;
     width: 15%;

@@ -10,9 +10,10 @@ class Game(models.Model):
         ('WONDER', 'Wonder'),
         ('DOMINATION', 'Domination')
     )
+    name = models.CharField(max_length=50, null=False, default='')
     num_of_turns = models.IntegerField(default=50)
-    victory_condition = models.CharField(max_length=10, choices=VICTORY_CHOICES)
+    victory_condition = models.CharField(max_length=10, choices=VICTORY_CHOICES, default='SCORE')
     status = models.BooleanField(default=False)
     map = models.ForeignKey(Map, on_delete=models.CASCADE)
     chat = models.ForeignKey(ChatMessage, on_delete=models.CASCADE)
-    resource = models.OneToOneField(Resources, on_delete=models.CASCADE)
+    resource = models.OneToOneField(Resources, on_delete=models.CASCADE, null=True)
