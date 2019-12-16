@@ -15,5 +15,11 @@ class User(models.Model):
     status = models.BooleanField(default=False, null=True)
     settings = models.OneToOneField(Settings, on_delete=models.CASCADE)
 
+    def save(self, *args, **kwargs):
+        if len(User.objects.all().filter(username=self.username)) > 1:
+            return False
+        super(User, self).save(*args, **kwargs)
+        return True
+
     def __str__(self):
         return self.username
