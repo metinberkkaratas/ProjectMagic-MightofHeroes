@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import BattleReport
 
-# Register your models here.
+
+admin.site.register(BattleReport)
