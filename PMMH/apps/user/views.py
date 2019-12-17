@@ -16,7 +16,7 @@ def login(request):
         if form.is_valid():
             settings = Settings.objects.create()
             user = User.objects.create(username=form.cleaned_data['username'], settings=settings)
-            if not (user.save()):
+            if not user.save():
                 print("Username " + user.username + " already in used!")
                 return render(request, 'index.html', {'form': login_form})
             request.session['username'] = user.username

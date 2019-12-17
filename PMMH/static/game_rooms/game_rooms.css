@@ -280,3 +280,14 @@ body {
     background: #4CAF50;
     cursor: pointer;
   }
+.filter{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.col{
+    float: left;
+}
+.filterRow{
+    margin-top: 15px;
+}

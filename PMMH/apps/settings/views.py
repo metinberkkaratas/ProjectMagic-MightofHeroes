@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import SettingsForm, SelectGameForm
 from apps.game.models import Game
+from django.http import HttpResponseRedirect
 
 
 def settings_panel_generator(request):
@@ -16,6 +17,8 @@ def settings_panel_generator(request):
 
 
 def lobby(request):
+    if not request.session.get('username', False):
+        return HttpResponseRedirect('/')
     game_forms = []
     for game in Game.objects.all().values_list('name', flat=True):
         game_form = SelectGameForm().game_name
