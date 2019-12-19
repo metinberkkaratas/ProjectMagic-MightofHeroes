@@ -106,7 +106,7 @@ venv.bak/
 # Pycharm
 .idea
 PMMH/.idea/*
-
+*/.idea/*
 
 # mypy
 .mypy_cache/
