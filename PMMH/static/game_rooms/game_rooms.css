@@ -209,7 +209,7 @@ body {
 }
 
         
-#roomNameDiv{
+.roomNameDiv{
     float: left;
     margin: auto;
     margin-top: 3%;

@@ -1,34 +1,33 @@
-body {
+#mainDiv{
     background-image: url(../media/example-light.png);
     background-repeat:no-repeat;
     background-position: center;
     background-size: 100% 100%;
     overflow: hidden;
     background-color: gray;
-    height: 100%;
-}
-#mainDiv{
+    height: 100vh;
     text-align: center;
 }
-
-#TitleDiv{
+#BackgroundDiv{
+    margin:auto;
+    padding: 9%;
+    background-size: 97% 95%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(../media/general-background.png);
+}
+#TitleDiv{
     margin-right:auto;
     margin-left: auto;
-    margin-top:1%;
     text-align:center;
-    width: 50%;
-    background-image: url(../media/Logo.png);
-    background-position: center;
-    height: 250px;
-    background-size: 100% 100%;
+    width: 40%;
 }
 #PlayDiv{
     margin:auto;
     background-size: 100% 100%;
     margin-top:1%;
     text-align:center;
-    width: 600;
+    width: 40%;
     background-image: url(../media/play_button.png);
     background-position: center;
     height: 250px;
@@ -37,7 +36,7 @@ body {
     margin:auto;
     margin-top:1%;
     text-align:center;
-    width: 250;
+    width: 20%;
     background-image: url(../media/example-dark.png);
     background-position: center;
     background-size: 100% 100%;
@@ -47,16 +46,8 @@ body {
     background-color: inherit;
     border: none;
     color: white;
-    height: 55px;
-    line-height: 55px;
-    width: inherit;
+    height: 30px;
+    line-height: 30px;
+    width: 90%;
     padding: 10px;
-}
-#BackgroundDiv{
-    margin:auto;
-    padding: 9%;
-    background-size: 97% 95%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../media/general-background.png);
 }

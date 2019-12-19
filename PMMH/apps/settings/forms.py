@@ -8,4 +8,4 @@ class SettingsForm(forms.Form):
 
 class SelectGameForm(forms.Form):
     game_name = forms.CharField(max_length=50)
-    id = forms.IntegerField()
+    game_id = forms.IntegerField()

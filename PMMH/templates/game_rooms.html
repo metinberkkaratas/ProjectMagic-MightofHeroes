@@ -2,6 +2,7 @@
     <link rel="stylesheet" type="text/css" href="../static/game_rooms/game_rooms.css">
     </link>
     <script src="../static/game_rooms/game_rooms.js"></script>
+
     <title>Magic&Might of Heroes</title>
 </head>
 <style>
@@ -14,14 +15,25 @@
             <div id="gameRoomsHostsDiv">
                 <div id="leftCross"></div>
                 <div id="roomsDiv">
-                    <div class="spesificRoom">
-                        <div id="roomNameDiv"><h3 class="spesificRoomsText">Metin's Game</h3></div>
-                        <div id="joinButtonDiv"><button class="joinGameButton" onclick="hostGame();" type="button">Join</button></div>
-                    </div>
-                    <div class="spesificRoom">
-                        <div id="roomNameDiv"><h3 class="spesificRoomsText">Uğur's Game</h3></div>
-                        <div id="joinButtonDiv"><button class="joinGameButton" onclick="hostGame();" type="button">Join</button></div>
-                    </div>
+                {% comment %}
+                    TODO add paginition
+                {% endcomment %}
+                    {% for game_form in games_forms %}
+                        <form action='/game_rooms' method="post">
+                            <div class="spesificRoom">
+                                <div class="roomNameDiv">
+                                    <h3 class="spesificRoomsText">
+                                        {{ game_form.game_name.value }}
+                                    </h3>
+                                </div>
+                                <div id="joinButtonDiv">
+                                    <button class="joinGameButton" type="submit" >
+                                        Join
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    {% endfor %}
                 </div>
                 <div id="rightCross"></div>
             </div>
@@ -30,7 +42,13 @@
             <div id="settingsHeader"></div>
             <div id="settingDiv">
                 <div class="row">
-                    <div class="hostGameDiv"><button class="hostGameButton" onclick="hostGame();" type="button">Host Game</button></div>
+                    <div class="hostGameDiv">
+                        <button class="hostGameButton" type="submit">
+                            <a href='host_game' >
+                                Host Game
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="hostGameDiv"><button class="hostGameButton" type="button">Load Game</button></div>
@@ -56,7 +74,7 @@
                     </div>
                 </form>{% endcomment %}
             </div>
-
+        </div>
     </div>
 </body>
 

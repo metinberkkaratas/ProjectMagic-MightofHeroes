@@ -1,18 +1,14 @@
+{% extends 'base.html' %}
 {% load static %}
-<html>
-<head>
-
+{% block head %}
     <link rel="stylesheet" type="text/css" href="{% static "login/login.css" %}">
     <script src="{% static "login/login.js" %}"></script>
-    <title>Magic&Might of Heroes</title>
-</head>
-<style>
-</style>
-
-<body>
+{% endblock %}
+{% block content %}
     <div id="mainDiv">
         <div id="BackgroundDiv">
             <div id="TitleDiv">
+                <img src="{% static "media/Logo.png" %}" width="100%" />
             </div>
             <form id="loginForm" action="/" method="post">
                 {% csrf_token %}
@@ -24,6 +20,4 @@
             </form>
         </div>
     </div>
-</body>
-
-</html>
+{% endblock %}
