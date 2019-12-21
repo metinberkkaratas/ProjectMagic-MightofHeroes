@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static '_shared/chat/chat.css' %}"></link>
+    <script src="{% static '_shared/chat/chat.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <div id="chatDiv">
+        <div id="showText">
+            <span><-demo-chat-message-></span>
+        </div>
+        <hr>
+        <div id="chatText">
+            <input maxlength="100" placeholder="Enter to send your message!" />
+        </div>
+    </div>
+{% endblock %}

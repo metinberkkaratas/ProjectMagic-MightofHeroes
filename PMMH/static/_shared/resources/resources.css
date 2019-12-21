@@ -1,0 +1,54 @@
+#resourceDiv{
+  background-image: url(../../media/example-light.png);
+  margin: auto;
+  width: 90%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 300px;
+
+}
+#resourceTagDiv{
+ height: 15%;
+ width: 60%;
+ margin: auto;
+ padding: 30px;
+}
+#resources-general{
+  height: 50%;
+  width: 80%;
+  margin: auto;
+}
+#resources-types{
+ float: left;
+ margin: auto;
+ height: 95%;
+ width: 50%;
+}
+#resources-number{
+  height:60%;
+  width:40%;
+  float: left;
+  margin: auto;
+}
+#resource-gold{
+  height: 40%;
+  width:80%;
+  float: none;
+  margin: auto;
+}
+#resource-poplimit{
+  height: 40%;
+  width:80%;
+  float: none;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#resource-power{
+  height: 40%;
+  width:80%;
+  float: none;
+  margin: auto;
+  margin-top: 10%;
+}

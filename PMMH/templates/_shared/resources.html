@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static '_shared/resources/resources.css' %}"></link>
+    <script src="{% static '_shared/resources/resources.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <div id="resourceDiv">
+        <div id=resourceTagDiv>
+            <img src="../../static/media/resource-tag.png" alt="" width="90%" class="img-container">
+        </div>
+        <div id="resources-general">
+            <div id="resources-types">
+                <img src="../../static/media/resource-types.png" alt="" width="90%" style="width: 200px;height: 150px;">
+            </div>
+            <div id="resources-number">
+                <div id="resource-gold">
+                    <input readonly cols="16" />
+                </div>
+                <div id="resource-poplimit">
+                    <input readonly cols="16" />
+                </div>
+                <div id="resource-power">
+                    <input readonly cols="16" />
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
