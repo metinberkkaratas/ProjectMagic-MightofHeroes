@@ -1,14 +1,10 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="../static/game_rooms/game_rooms.css">
-    </link>
-    <script src="../static/game_rooms/game_rooms.js"></script>
-
-    <title>Magic&Might of Heroes</title>
-</head>
-<style>
-</style>
-
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'game_rooms/game_rooms.css' %}">
+    <script src="{% static 'game_rooms/game_rooms.js' %}"></script>
+{% endblock %}
+{% block content %}
     <div id="mainDiv">
         <div id="gameRoomsDiv">
             <div id="gameRoomsHeader"><h3 class="gameRoomsText">GAME ROOMS</h3></div>
@@ -76,6 +72,4 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
+{% endblock %}

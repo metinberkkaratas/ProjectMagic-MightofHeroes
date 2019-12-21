@@ -2,14 +2,15 @@ body {
     background-image: url(../media/general-background.png);
     background-repeat: no-repeat;
     background-size: contain, cover;
-  }
+    height: 100vh;
+}
 
 #mainDiv{
     float: none;
     margin: auto;
     background-position: center;
     width: 95%;
-    height: 95%;
+    height: 95vh;
     margin-top: 2%;
     
 }
@@ -19,7 +20,7 @@ body {
     margin: auto;
     background-position: center;
     width: 70%;
-    height: 99%;
+    height: 95vh;
 }
 
 #gameRoomsHeader{
@@ -119,7 +120,7 @@ body {
     float: none;
     margin: auto;
     width: 99%;
-    height: 25%;
+    height: 16vh;
     margin-top: 1%;
 }
 
