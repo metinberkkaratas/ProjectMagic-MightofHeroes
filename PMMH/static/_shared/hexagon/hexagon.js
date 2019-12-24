@@ -24,6 +24,8 @@ class Location2d {
     }
 }
 
+let selectedTroop;
+
 window.addEventListener('load',function() {
 
     // TODO cpu optimization for large map
@@ -79,10 +81,10 @@ window.addEventListener('load',function() {
 
     let clickableSpriteGroup = [];
 
-    let selectedTroop;
     let selectedNeighbors = [];
 
     function onPreload() {
+
         game.load.image("hexagon", "../../../static/media/map/fantasyhextiles_v3.png");
         game.load.image("selected", "../../../static/media/map/fantasyhextiles_v3.png");
         game.load.image("troop", "../../../static/media/soldiars/MapWithSoldiars (1) (1).png");
@@ -189,6 +191,7 @@ window.addEventListener('load',function() {
                  let coorY = HEX_HEIGHT*j/2;
                  if(mapMatrix[i][j] > 0){
                      let troop = game.add.sprite(coorX,coorY,"troop");
+                     troop.data = mapMatrix[i][j];
                      troop.inputEnabled = true;
                      troop.events.onInputDown.add(selectTroopListener, this);
                      hexagonArray[i][j].tint = SELECTED_UNIT;
@@ -208,6 +211,7 @@ window.addEventListener('load',function() {
         i = coorXToIndex(troop.x, j);
         console.log(i + "," + j);
         selectedTroop = troop;
+        document.getElementById('characterDetail').disabled = false;
         selectedNeighbors = findNeighbors(i,j);
         selectedNeighbors.forEach(location => hexagonArray[location.coordinateX][location.coordinateY].tint = SELECTED_UNIT);
         hexagonArray[i][j].tint = SELECTED_UNIT;
@@ -242,8 +246,7 @@ window.addEventListener('load',function() {
                 console.debug("cannot move!");
             }
         }else {
-            console.log("dropped troop!");
-            selectedTroop = null;
+            console.log("invalid click!");
         }
     }
 

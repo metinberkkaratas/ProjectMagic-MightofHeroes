@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-<title>Magic&Might of Heroes</title>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="../../static/overworld/chracter_view/chracter_view.css">
-    </link>
-    <script src="../../static/overworld/chracter_view/chracter_view.js" ></script>
-</head>
-
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'overworld/chracter_view/chracter_view.css' %}">
+    <script src="{% static 'overworld/chracter_view/chracter_view.js' %}" ></script>
+{% endblock %}
+{% block content %}
     <div id="mainDiv">
         <div id="closexDiv">
             <img onclick="closePanel();" src="../../static/media/close-x.png" alt="" style="margin: auto;width: 70px;height: 70px;">
@@ -136,7 +132,4 @@
             </div>
         </div>
     </div>
-
-</body>
-
-</html>
+{% endblock %}

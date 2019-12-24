@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% load static %}
 {% block head %}
     <link rel="stylesheet" type="text/css" href="{% static 'overworld/base/base.css' %}">
@@ -19,8 +18,12 @@
                 <div id="turnButtonDiv">
                     <img src="../../static/media/turn-button.png" alt="" width="90%">
                 </div>
+                <div class="float-left">
+                    <button id="characterDetail" onclick="characterDetails()">Character Details</button>
+                </div>
             </div>
             {% include '_shared/chat.html' %}
         </div>
     </div>
+    {% include 'overworld/chracter_view.html' %}
 {% endblock %}
