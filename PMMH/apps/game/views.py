@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def overworld(request):
-    pass
+    return render(request, 'overworld/overworld_base.html')
 
 
 def waiting(request):
