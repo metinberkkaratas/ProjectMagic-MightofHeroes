@@ -1,4 +1,6 @@
 from django import forms
+from apps.user.models import User
+from apps.game.models import Game
 
 
 class SettingsForm(forms.Form):
@@ -9,3 +11,42 @@ class SettingsForm(forms.Form):
 class SelectGameForm(forms.Form):
     game_name = forms.CharField(max_length=50)
     game_id = forms.IntegerField()
+
+
+class HostGameGameForm(forms.ModelForm):
+    VICTORY_CHOICES = (
+        ('SCORE', 'Score'),
+        ('WONDER', 'Wonder'),
+        ('DOMINATION', 'Domination')
+    )
+
+    num_of_turns = forms.IntegerField()
+    victory_condition = forms.ChoiceField(choices=VICTORY_CHOICES)
+
+    class Meta:
+        model = Game
+        fields = (
+            'num_of_turns',
+            'victory_condition',
+            'map'
+        )
+
+
+class HostGameUserForm(forms.ModelForm):
+    NATION_CHOICES = (
+        ('NAT1', 'Nation1'),
+        ('NAT2', 'Nation2'),
+        ('NAT3', 'Nation3')
+    )
+
+    nation = forms.ChoiceField(choices=NATION_CHOICES)
+    status = forms.BooleanField()
+
+    class Meta:
+        model = User
+        fields = (
+            'nation',
+            'status',
+            'username',
+            'game'
+        )

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import SettingsForm, SelectGameForm
+from .forms import SettingsForm, SelectGameForm, HostGameGameForm, HostGameUserForm
 from apps.game.models import Game
 from django.http import HttpResponseRedirect
 
@@ -25,7 +25,7 @@ def lobby(request):
             return HttpResponseRedirect('lobby/' + select_form.game_id)
     game_forms = []
     for game in Game.objects.all():
-        game_form = SelectGameForm(initial={'game_name': game.name, 'game_id': game.id})
+        game_form = SelectGameForm(initial={'game_name': game.name, 'game_id': game.resource.id})
         game_forms.append(game_form)
     return render(request,
                   'game_rooms.html',
@@ -40,7 +40,12 @@ def game_room(request, room_game):
 
 
 def host_game(request):
-    return render(request, 'host_game.html')
+    host_game_form = HostGameGameForm(request.POST or None)
+    host_game_user_form = HostGameUserForm(request.POST or None)
+    if host_game_form.is_valid() and host_game_user_form.is_valid():
+        game = host_game_form.save()
+        game_user = host_game_user_form.save()
+        return render(request, 'host_game.html', {'host_game_form': HostGameGameForm, 'host_game_user_form': host_game_user_form})
 
 
 def join_room(request, room_game):

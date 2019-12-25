@@ -1,6 +1,5 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../static/host_game/host_game.css">
-    </link>
     <script src="../static/host_game/host_game.js"></script>
     <title>Magic&Might of Heroes</title>
 </head>
@@ -21,11 +20,8 @@
 
                 </div>
                 <div class="Nation">
-                    <select>
-                        <option value="Nation1">Nation1</option>
-                        <option value="Nation2">Nation2</option>
-                        <option value="Nation3">Nation3</option>
-                    </select>
+                   {% csrf_token %}
+                    {{ host_game_user_form.as_p }}
                 </div>
                 <div class="CheckBox">
                     <form action="/action_page.php">
