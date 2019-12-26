@@ -1,157 +1,76 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="../static/host_game/host_game.css">
-    <script src="../static/host_game/host_game.js"></script>
-    <title>Magic&Might of Heroes</title>
-</head>
-<style>
-</style>
-
-<body>
-    <div id="mainDiv">
-        <div id="PlayerListDiv">
-
-
-            <div class="Player topPlayer">
-                <div class="color">
-
-
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'host_game/host_game.css' %}">
+    <script src="{% static 'host_game/host_game.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <div class="wrapper background-image">
+        <form id="gameForm" name="form" action="" method="post">
+            <div class="column w-70 p-3">
+                <div class="row">
+                    <div id="playerListDiv">
+                        {% for player in players %}
+                            {% csrf_token %}
+                            <div class="player">
+                                <div class="color">
+                                </div>
+                                <div class="nameDiv">
+                                    <input value="{{ player.username.value }}" disabled>
+                                </div>
+                                <div class="nation">
+                                    {{ player.nation }}
+                                </div>
+                                <div class="checkBox">
+                                    {{ player.status }}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="PlayerName">
-
-                </div>
-                <div class="Nation">
-                   {% csrf_token %}
-                    {{ host_game_user_form.as_p }}
-                </div>
-                <div class="CheckBox">
-                    <form action="/action_page.php">
-
-                        <input type="checkbox" name="Ready" value="Ready" class="checkboxSize"> <br>
-
-                    </form>
-                </div>
-            </div>
-            <div class="Player">
-                <div class="color" id="color2">
-
-
-                </div>
-                <div class="PlayerName">
-
-                </div>
-                <div class="Nation">
-                    <select>
-                        <option value="Nation1">Nation1</option>
-                        <option value="Nation2">Nation2</option>
-                        <option value="Nation3">Nation3</option>
-                    </select>
-                </div>
-                <div class="CheckBox">
-                    <form action="/action_page.php">
-
-                        <input type="checkbox" name="Ready" value="Ready" class="checkboxSize"> <br>
-
-                    </form>
-                </div>
-
-            </div>
-            <div class="Player">
-                <div class="color" id="color3">
-
-
-                </div>
-                <div class="PlayerName">
-
-                </div>
-                <div class="Nation">
-                    <select>
-                        <option value="Nation1">Nation1</option>
-                        <option value="Nation2">Nation2</option>
-                        <option value="Nation3">Nation3</option>
-                    </select>
-                </div>
-                <div class="CheckBox">
-                    <form action="/action_page.php">
-
-                        <input type="checkbox" name="Ready" value="Ready" class="checkboxSize"> <br>
-
-                    </form>
+                <div class="row h-25 w-100">
+                    <!-- TODO here goes chat-->
+                    {% include '_shared/chat.html' %}
                 </div>
             </div>
-
-
-        </div>
-
-        <div id="chatDiv">
-                <div id="showText">
-                  <textarea readonly rows="16" cols="164"></textarea>
+            <div class="column w-24 background-image-border">
+                <div class="row">
+                    <img src="{% static 'media/map-img.png' %}" alt="" style="margin: auto;width: 400px;height: 300px;">
+                    <div class="rows" id="MapSelection">
+                        <h3>
+                            MAP
+                        </h3>
+                    </div>
+                    <div class="row">
+                        {{ host_game_form.map }}
+                    </div>
+                    <div class="row" id="VictoryCondition">
+                        <h3>
+                            VICTORY CONDITION
+                        </h3>
+                    </div>
+                    <div class="row">
+                        {{ host_game_form.victory_condition }}
+                        {% comment %}<div id="NumberOfTurns">
+                            <h3>
+                                NumberOfTurns
+                            </h3>
+                        </div>
+                        <div class="row3">
+                            {{ host_game_form.number_of_turns.value }}
+                        </div>{% endcomment %}
+                        <div id="row">
+                            <input hidden name="gameReady"/>
+                            <a onclick="startGame()">
+                                <img src="{% static 'media/SliderButton.png' %}">
+                            </a>
+                        </div>
+                        <button>
+                            Back
+                        </button>
+                    </div>
                 </div>
-                <div id="chatText">
-                  <textarea sentences maxlength="100" placeholder="Enter to send your message!" rows="2" cols="164"></textarea>
-                </div>
-        </div>
-
-        
-
-
-
+            </div>
+        </form>
     </div>
-    <div id="sideDiv">
-        <div id="MapBackgroundDiv">
-            <img src="../static/media/map-img.png" alt="" style="margin: auto;width: 400px;height: 300px;">
-            <div id="MapSelection">
-                <h3>
-                    MAP
-                </h3>
-
-
-            </div>
-            <div class="row">
-                <select>
-                    <option value="The Moving Forest">The Moving Forest</option>
-
-                </select>
-            </div>
-            <div id="VictoryCondition">
-                <h3>
-                    VICTORY CONDITION
-                </h3>
-            </div>
-            <div class="row2">
-
-                <select>
-                    <option value="The Moving Forest">The Moving Forest</option>
-
-                </select>
-
-
-                <div id="NumberOfTurns">
-                    <h3>
-                        NumberOfTurns
-                    </h3>
-                </div>
-                <div class="row3">
-
-                    <select>
-                        <option value="TurnNumber">50</option>
-
-                    </select>
-                </div>
-                <div id="row">
-                    <div id="StartButton" onclick="startGame()" >
-                    </div>
-                    <div id="startText">
-                        <h2>START</h2>
-                    </div>
-                    
-                </div>
-                
-
-            </div>
-
-
-
-
-</body>
-
-</html>
+{% endblock %}

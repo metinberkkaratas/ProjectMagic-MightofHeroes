@@ -1,44 +1,43 @@
-body {
+.background-image{
     background-image: url(../media/general-background.png);
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-color: gray;
-  
-  }
-  #mainDiv{
-    height: 900px;
-    width: 70%;
+    background-size:100vh 100%;
+    overflow-y: hidden;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.column{
     float: left;
-   
-
 }
-#PlayerListDiv{
-    float: none;
-    padding: 1%;
-    margin: auto;
+.row{
+    width: 100%;
+}
+.w-70{
+    width: 70%;
+}
+.w-24{
+    width: 24%;
+}
+.p-3{
+    padding: 3vh 3%;
+}
+.h-25{
+    height: 100vh;
+}
+#playerListDiv{
     background-image: url(../media/example-light.png);
-    height:550;
-    width:95%;
     background-size:100% 100%;
-
+    padding: 2vh 1%;
+    margin: auto;
+    height:55vh;
 }
-
-.Player{
-
-margin:auto;
-margin-top: 3%;
-
-height: 50;
-width: 70%;
-
+.player{
+    margin: auto;
+    margin-top: 3%;
+    height: 50px;
+    width: 70%;
 }
-
-.topPlayer{
-    margin-top: 5%;
-
-}
-
 .color{
     float: left;
     width: 10%;
@@ -60,7 +59,7 @@ width: 70%;
     background-image: url(../media/OrangeBar.png);
     background-size:100% 100%;
 }
-.PlayerName{
+.playerName{
     float: left;
     margin-left: 5%;
     width: 40%;
@@ -68,100 +67,45 @@ width: 70%;
     background-image: url(../media/SliderBar.png);
     background-size:100% 100%;
 }
-.Nation{
+.nation{
     float: left;
     margin-left: 5%;
     width: 20%;
     height: 50px;
-    
 }
-.Nation select{
+.nation select{
     float: left;
     margin-left: 5%;
     width: 100%;
     height: 50px;
 }
-.CheckBox{
+.checkBox{
     float: left;
     margin-left: 5%;
     width: 15%;
     height: 50px;
-     
-    
 }
-input.CheckBox{
+input.checkBox{
     float: left;
     margin-left: 5%;
     width: 100%;
     height: 50px;
 }
-
 input.largerCheckbox { 
     float: left;
     margin-left: 5%;
     width: 40px; 
     height: 40px; 
-} 
-#ChatListDiv{
-    padding: 1%;
-    margin: auto;
-    margin-top: 1%;
-    background-image: url(../media/example-dark.png);
-    height:25%;
-    width:95%;
+}
+.background-image-border{
+    padding-top: 5vh;
+    background-image:url(../media/example-light.png);
     background-size:100% 100%;
-    
-}
-#chatSize{
-    padding: 20%;
-    margin: auto;
-    width: 95%;
-    height: 175px;
-}
-
-#chatDiv{
-    background-image: url(../media/example-dark.png);
-    background-size: 100% 100%;
-    margin: auto;
-    margin-top: 1%;
-    padding-top:1%;
-    float: none;
-    width: 95%;
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-  }
-
-  #showText{
-    float: none;
-    margin: auto;
-    padding-top:1%;
-    height: 75%;
-    width:95%;
-  }
-
-  #chatText{
-    float: none;
-    margin: auto;
-    height: 5%;
-    padding-top:1%;
-    width:95%;
-  }
-
-#sideDiv{
- height: 950px;
- width: 30%;
- float: left;
- background-image:url(../media/example-light.png);
- background-size:100% 100%;
- background-image: no-repeat;
+    background-image: no-repeat;
 }
 #MapBackgroundDiv{
     margin: auto;
-    margin-top: 15%;
-    height: 300;
-    width: 400;
+    padding: 3vh 10%;
   background-image:url(../media/example-dark.png);
    background-size:100% 100%;
    background-image: no-repeat;
@@ -177,11 +121,6 @@ input.largerCheckbox {
     text-align: center;
     background-size:100% 100%;
     background-image: no-repeat;
-}
-.row{
-    margin-top: 5px;
-    text-align: center;
-
 }
 #VictoryCondition{
     margin: auto;
@@ -235,16 +174,26 @@ input.largerCheckbox {
     margin-top:2%;
 }
 
-#row{
-    float: none;
-    margin: auto;
-    height: 100%;
-    width: 95%;
-    margin-top:2%;
-    margin-left: 15%;
-}
-
 .checkboxSize{
     width: 40px;
     height: 40px;
+}
+.nameDiv{
+    float: left;
+    margin-left: 1%;
+    text-align:center;
+    width: 20%;
+    background-image: url(../media/example-dark.png);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 45px;
+}
+.nameDiv input{
+    background-color: inherit;
+    border: none;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    width: 90%;
+    padding: 10px;
 }

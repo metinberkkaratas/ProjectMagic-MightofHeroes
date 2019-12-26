@@ -9,19 +9,18 @@
         <div id="gameRoomsDiv">
             <div id="gameRoomsHeader"><h3 class="gameRoomsText">GAME ROOMS</h3></div>
             <div id="gameRoomsHostsDiv">
-                <div id="leftCross"></div>
+                <div id="leftCross" style="visibility: hidden"></div>
                 <div id="roomsDiv">
-                {% comment %}
-                    TODO add paginition
-                {% endcomment %}
                     {% for game_form in games_forms %}
-                        <form action='/game_rooms' method="post">
+                        <form action='/game_rooms/' method="post">
+                        {% csrf_token %}
                             <div class="spesificRoom">
                                 <div class="roomNameDiv">
                                     <h3 class="spesificRoomsText">
                                         {{ game_form.game_name.value }}
                                     </h3>
                                 </div>
+                                <input name="game_id" value="{{ game_form.game_id.value }}" hidden />
                                 <div id="joinButtonDiv">
                                     <button class="joinGameButton" type="submit" >
                                         Join
@@ -31,7 +30,7 @@
                         </form>
                     {% endfor %}
                 </div>
-                <div id="rightCross"></div>
+                <div id="rightCross" style="visibility: hidden" ></div>
             </div>
         </div>
         <div id="settingsDiv">
@@ -39,15 +38,16 @@
             <div id="settingDiv">
                 <div class="row">
                     <div class="hostGameDiv">
-                        <a href='host_game' >
-                            <button class="hostGameButton">
+                        <form action="/game_rooms/" method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="hostGameButton" id="hostGameButton">
                                 Host Game
                             </button>
-                        </a>
+                        </form>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="hostGameDiv"><button class="hostGameButton" type="button">Load Game</button></div>
+                    <div class="hostGameDiv"><button class="hostGameButton" type="button" disabled style="opacity: 0.3;" >Load Game</button></div>
                 </div>
                 <!--<div class="row filterRow">
                     <div class="col">

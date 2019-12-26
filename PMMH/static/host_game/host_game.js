@@ -1,3 +1,3 @@
 function startGame(){
-    location.replace('/game');
+    document.getElementById('gameForm').submit();
 }

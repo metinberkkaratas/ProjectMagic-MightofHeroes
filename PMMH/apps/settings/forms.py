@@ -9,19 +9,24 @@ class SettingsForm(forms.Form):
 
 
 class SelectGameForm(forms.Form):
-    game_name = forms.CharField(max_length=50)
+    game_name = forms.CharField(max_length=50, required=False)
     game_id = forms.IntegerField()
 
 
-class HostGameGameForm(forms.ModelForm):
+class HostGameForm(forms.ModelForm):
     VICTORY_CHOICES = (
-        ('SCORE', 'Score'),
+        #('SCORE', 'Score'),
         ('WONDER', 'Wonder'),
         ('DOMINATION', 'Domination')
+    )
+    MAP_CHOICES = (
+        ('MAP1', 'Map 1'),
+        ('MAP2', 'Map 2'),
     )
 
     num_of_turns = forms.IntegerField()
     victory_condition = forms.ChoiceField(choices=VICTORY_CHOICES)
+    map = forms.ChoiceField(choices=MAP_CHOICES)
 
     class Meta:
         model = Game
@@ -40,7 +45,10 @@ class HostGameUserForm(forms.ModelForm):
     )
 
     nation = forms.ChoiceField(choices=NATION_CHOICES)
-    status = forms.BooleanField()
+    status = forms.BooleanField(widget=forms.CheckboxInput(attrs={
+        'class': 'checkboxSize'
+    }))
+    game = HostGameForm(initial=None)
 
     class Meta:
         model = User
@@ -50,3 +58,6 @@ class HostGameUserForm(forms.ModelForm):
             'username',
             'game'
         )
+
+class HostGameButtonForm(forms.Form):
+    game_id = forms.IntegerField(required=False)
