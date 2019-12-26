@@ -7,5 +7,6 @@ urlpatterns = [
     path('<str:id>', views.overworld, name='over_world'),
     path('waiting', views.waiting, name='waiting_others'),
     path('city/<str:name>', city_views.city, name='City'),
-    path('battlefield', include(battlefield_url))
+    path('battlefield', include(battlefield_url)),
+
 ]

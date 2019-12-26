@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '172.27.103.0',
-    'localhost'
+    'localhost',
+    '127.0.0.1'
 ]
 
 
@@ -62,6 +63,7 @@ INSTALLED_APPS = [
     'apps.game.unit.hero.skill',
     'apps.game.unit.ship',
     'apps.game.unit.unit_stat',
+
 ]
 
 MIDDLEWARE = [
@@ -94,7 +96,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'PMMH.wsgi.application'
-
+ASGI_APPLICATION = "PMMH.routing.application"
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
