@@ -25,7 +25,11 @@ SECRET_KEY = '7i_d*u)b@i58y7fbxb^kqbn2-^c2e=_%o9erra#m0l%bexmsb4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '172.27.103.0',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -59,6 +63,7 @@ INSTALLED_APPS = [
     'apps.game.unit.hero.skill',
     'apps.game.unit.ship',
     'apps.game.unit.unit_stat',
+
 ]
 
 MIDDLEWARE = [
@@ -91,7 +96,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'PMMH.wsgi.application'
-
+ASGI_APPLICATION = "PMMH.routing.application"
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -152,3 +157,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+

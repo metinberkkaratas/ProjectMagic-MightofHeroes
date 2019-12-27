@@ -2,5 +2,5 @@ from django.db import models
 
 
 class ChatMessage(models.Model):
-    message = models.CharField(max_length=120)
+    message = models.CharField(max_length=120, default='')
     received_at = models.DateField(auto_now_add=True)

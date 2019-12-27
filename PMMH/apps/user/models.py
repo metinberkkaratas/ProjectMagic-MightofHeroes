@@ -9,7 +9,7 @@ class User(models.Model):
         ('NAT2', 'Nation2'),
         ('NAT3', 'Nation3')
     )
-    game = models.ForeignKey(Game, on_delete=models.CASCADE, null=True)
+    game = models.ForeignKey(Game, on_delete=models.SET_NULL, null=True)
     username = models.CharField(max_length=30, default='')
     nation = models.CharField(max_length=7, choices=NATION_CHOICES, null=True)
     status = models.BooleanField(default=False, null=True)
