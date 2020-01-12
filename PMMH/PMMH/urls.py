@@ -22,9 +22,10 @@ from apps.game.chat.urls import urlpatterns as chat_url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('chat/', include(chat_url)),
     path('', include(user_url)),
     path('game_rooms/', include(settings_url)),
     path('game/', include(game_url)),
-    path('chat/', include(chat_url))
+
 
 ]
