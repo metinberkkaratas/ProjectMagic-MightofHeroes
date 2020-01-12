@@ -26,6 +26,6 @@ urlpatterns = [
     path('', include(user_url)),
     path('game_rooms/', include(settings_url)),
     path('game/', include(game_url)),
-
+    path('chat/', include(chat_url))
 
 ]

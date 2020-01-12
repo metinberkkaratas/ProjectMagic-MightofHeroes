@@ -106,6 +106,7 @@ TEMPLATES = [
 ASGI_APPLICATION = 'PMMH.routing.application'
 
 WSGI_APPLICATION = 'PMMH.wsgi.application'
+ASGI_APPLICATION = "PMMH.routing.application"
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -162,3 +163,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
